@@ -1,0 +1,1 @@
+# spring-social-wechat-sample
