@@ -12,7 +12,7 @@ Update *app-id* and *app-secret* of 'src/main/resources/application.yml'.
 
 ### step 3 ###
 
-Install maven & execute *mvn spring-boot:run*.
+Install maven & execute 'mvn spring-boot:run'.
 
 ### step 4 ###
 
