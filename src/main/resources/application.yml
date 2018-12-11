@@ -4,8 +4,8 @@ server:
 spring:
   social:
     wechat:
-      app-id: wx2821568e5ae69fa8
-      app-secret: b4cf925b5b49a5f0878fc36a16900be5
+      app-id: [微信开放平台appId]
+      app-secret: [微信开放平台appSecret]
     wechatmp: 
-      app-id: wx2187f22c4a249d58
-      app-secret: a040c8c20b5778be7e43180beefb3a9e
+      app-id: [微信公众平台appId]
+      app-secret: [微信公众平台appSecret]
