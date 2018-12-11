@@ -26,9 +26,7 @@ public class Application {
 	public ProviderSignInController providerSignInController(ConnectionFactoryLocator connectionFactoryLocator,
 			UsersConnectionRepository usersConnectionRepository, WechatSignInAdapter wechatSignInAdapter) {
 		((InMemoryUsersConnectionRepository) usersConnectionRepository)
-				.setConnectionSignUp((Connection<?> connection) -> {
-					return connection.getKey().getProviderUserId();
-				});
+				.setConnectionSignUp((Connection<?> connection) -> connection.getKey().getProviderUserId());
 		return new ProviderSignInController(connectionFactoryLocator, usersConnectionRepository, wechatSignInAdapter);
 	}
 
