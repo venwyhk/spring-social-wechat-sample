@@ -4,13 +4,17 @@ spring-social微信授权登录例子
 
 ### step 1 ###
 
-Update *app-id* and *app-secret* of 'src/main/resources/application.yml'.
+Clone codes.
 
 ### step 2 ###
+
+Update *app-id* and *app-secret* of 'src/main/resources/application.yml'.
+
+### step 3 ###
 
 Install maven & execute *mvn spring-boot:run*.
 
-### step 2 ###
+### step 4 ###
 
 http://localhost:8080/login.htm
 
