@@ -6,7 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.social.config.annotation.EnableSocial;
 import org.springframework.social.connect.ConnectionFactoryLocator;
+import org.springframework.social.connect.ConnectionSignUp;
 import org.springframework.social.connect.UsersConnectionRepository;
+import org.springframework.social.connect.mem.InMemoryUsersConnectionRepository;
 import org.springframework.social.connect.web.ProviderSignInController;
 import org.springframework.social.wechat.autoconfigurer.WechatAutoConfiguration;
 import org.springframework.social.wechat.autoconfigurer.WechatMpAutoConfiguration;
@@ -21,7 +23,9 @@ public class Application {
 	}
 
 	@Bean
-	public ProviderSignInController providerSignInController(ConnectionFactoryLocator connectionFactoryLocator, UsersConnectionRepository usersConnectionRepository) {
+	public ProviderSignInController providerSignInController(ConnectionFactoryLocator connectionFactoryLocator,
+			UsersConnectionRepository usersConnectionRepository, ConnectionSignUp wechatConnectionSignUp) {
+		((InMemoryUsersConnectionRepository) usersConnectionRepository).setConnectionSignUp(wechatConnectionSignUp);
 		return new ProviderSignInController(connectionFactoryLocator, usersConnectionRepository, null);
 	}
 
