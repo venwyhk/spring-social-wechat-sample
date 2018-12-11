@@ -1,0 +1,30 @@
+<configuration>
+    <appender name="Default" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %p (%file:%line\)- %m%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <appender name="Error"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/error.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/error.log.%d.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>64 MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d %p (%file:%line\)- %m%n
+            </pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="Default" />
+    </root>
+    <logger name="com.simpleryo.merchant" level="ERROR">
+        <appender-ref ref="Error" />
+    </logger>
+</configuration>
