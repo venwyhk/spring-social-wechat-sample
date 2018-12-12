@@ -18,7 +18,7 @@ public class WechatSignInAdapter implements SignInAdapter {
 			User user = ((Wechat) connection.getApi()).userOperations().getUserProfile(openId);
 			System.out.println(user); // 微信用户详细信息
 		}
-		return null; // 返回跳转的url
+		return "/login.htm"; // 返回跳转的url
 	}
 
 }
