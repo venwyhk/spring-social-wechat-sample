@@ -1,6 +1,6 @@
 # spring-social-wechat-sample
 
-spring-social微信授权登录例子
+This is Spring-Social sample of wechat.
 
 ### step 1 ###
 
