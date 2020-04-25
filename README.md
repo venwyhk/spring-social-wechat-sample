@@ -4,11 +4,11 @@ This is Spring-Social sample of wechat.
 
 ### step 1 ###
 
-Clone codes.
+Clone the project.
 
 ### step 2 ###
 
-Update *app-id* and *app-secret* of 'src/main/resources/application.yml'.
+Modify *app-id* and *app-secret* of 'src/main/resources/application.yml'.
 
 ### step 3 ###
 
