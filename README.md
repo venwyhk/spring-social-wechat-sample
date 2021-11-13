@@ -10,6 +10,8 @@ Clone the project.
 
 Modify *app-id* and *app-secret* of 'src/main/resources/application.yml'.
 
+You can get *app-id* and *app-secret* from [WeChat Open Platform](https://open.weixin.qq.com/) or [WeChat Official Accounts Platform](https://mp.weixin.qq.com/).
+
 ### step 3 ###
 
 Install maven and execute 'mvn spring-boot:run'.
