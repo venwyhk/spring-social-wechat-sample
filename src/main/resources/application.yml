@@ -9,3 +9,7 @@ spring:
     wechatmp: 
       app-id: [微信公众平台appId]
       app-secret: [微信公众平台appSecret]
+    wecom: 
+      crop-id: [企业微信cropId]
+      agent-id: [企业微信agentId]
+      secret: [企业微信secret]

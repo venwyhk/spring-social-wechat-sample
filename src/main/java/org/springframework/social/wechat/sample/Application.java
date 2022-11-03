@@ -10,12 +10,11 @@ import org.springframework.social.connect.ConnectionFactoryLocator;
 import org.springframework.social.connect.UsersConnectionRepository;
 import org.springframework.social.connect.mem.InMemoryUsersConnectionRepository;
 import org.springframework.social.connect.web.ProviderSignInController;
-import org.springframework.social.wechat.autoconfigurer.WechatAutoConfiguration;
-import org.springframework.social.wechat.autoconfigurer.WechatMpAutoConfiguration;
+import org.springframework.social.wechat.autoconfigure.*;
 
 @SpringBootApplication
 @EnableSocial
-@Import({ WechatAutoConfiguration.class, WechatMpAutoConfiguration.class })
+@Import({ WechatAutoConfiguration.class, WechatMpAutoConfiguration.class, WecomAutoConfiguration.class })
 public class Application {
 
 	public static void main(String[] args) throws Exception {
