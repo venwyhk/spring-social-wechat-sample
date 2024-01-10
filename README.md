@@ -20,4 +20,4 @@ Install maven and execute 'mvn spring-boot:run'.
 
 http://localhost:8080/login.htm
 
-(Accessing from WeChat if it is *wechatmp*.)
+(Accessing from WeChat if it is 'wechatmp'.)
